@@ -4,7 +4,7 @@
 <p>개발일정 : 2021.05.01 ~ 2021.05.31(1개월)</p><br>
 <p>사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework</p><br>
 <p>주요기술 : 회원가입, 로그인, 게시판(CRUD구현, 페이징, 검색, 추천), 댓글(CRUD구현) 메인페이지 인기 게시글 등록</p><br>
-![portfolio](https://user-images.githubusercontent.com/80883357/123399368-7eff0e80-d5df-11eb-90d3-fd903edf1a31.png)
+![portfolio](https://user-images.githubusercontent.com/80883357/123402174-6e03cc80-d5e2-11eb-8107-a64293df5da3.png)
 
 <h1>Guy 😄</h1>
 
