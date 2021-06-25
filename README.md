@@ -1,11 +1,11 @@
 ![portfolio](https://user-images.githubusercontent.com/80883357/123402307-9095e580-d5e2-11eb-9c12-9a6ed4fd1f0d.png)
 
 ✨PortFolio Project✨<br>
-<p>프로젝트명 : 웹 개발 커뮤니티</p><br>
-<p>참여인원 : 1명(나)</p><br>
-<p>개발일정 : 2021.05.01 ~ 2021.05.31(1개월)</p><br>
-<p>사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework</p><br>
-<p>주요기술 : 회원가입, 로그인, 게시판(CRUD구현, 페이징, 검색, 추천), 댓글(CRUD구현) 메인페이지 인기 게시글 등록</p><br>
+프로젝트명 : 웹 개발 커뮤니티<br>
+참여인원 : 1명(나)<br>
+개발일정 : 2021.05.01 ~ 2021.05.31(1개월)<br>
+사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework<br>
+주요기술 : 회원가입, 로그인, 게시판(CRUD구현, 페이징, 검색, 추천), 댓글(CRUD구현) 메인페이지 인기 게시글 등록<br>
 
 <h1>Guy 😄</h1>
 
