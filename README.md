@@ -5,6 +5,7 @@
 참여인원 : 1명(나)<br>
 개발일정 : 2021.05.01 ~ 2021.05.31(1개월)<br>
 사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework<br>
+개발환경 : Java 1.8, apache-tomcat 8.5.58, mysql 8.0.24.0, Spring 5.0.7.RELEASE
 주요기술 : 회원가입, 로그인, 게시판(CRUD구현, 페이징, 검색, 추천), 댓글(CRUD구현) 메인페이지 인기 게시글 등록<br>
 
 <h1>Guy 😄</h1>
