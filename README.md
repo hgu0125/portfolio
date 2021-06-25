@@ -1,7 +1,7 @@
-PortFolio Project<br>
+<h3>PortFolio Project</h3><br>
 프로젝트명 : 웹 개발 커뮤니티<br>
 참여인원 : 1명(나)<br>
-개발일정 : 2021.05.01 ~ 2021.05.31(1개월)<br?
+개발일정 : 2021.05.01 ~ 2021.05.31(1개월)<br>
 주요기술 : 회원가입, 로그인, 게시판(CRUD 기능, 추천기능), 댓글(CRUD 기능) 메인페이지 인기 게시글 등록<br>
 
 ![portfolio](https://user-images.githubusercontent.com/80883357/123399368-7eff0e80-d5df-11eb-90d3-fd903edf1a31.png)
