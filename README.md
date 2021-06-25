@@ -1,4 +1,4 @@
-<h3>PortFolio Project</h3><br>
+🌱<h3>PortFolio Project</h3>🌱<br>
 <p>프로젝트명 : 웹 개발 커뮤니티</p><br>
 <p>참여인원 : 1명(나)</p><br>
 <p>개발일정 : 2021.05.01 ~ 2021.05.31(1개월)</p><br>
