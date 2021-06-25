@@ -1,3 +1,4 @@
+![portfolio](https://user-images.githubusercontent.com/80883357/123399368-7eff0e80-d5df-11eb-90d3-fd903edf1a31.png)
 <h1>Guy 😄</h1>
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://hits.seeyoufarm.com)                 
