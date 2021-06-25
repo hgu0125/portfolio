@@ -1,7 +1,7 @@
 ![portfolio](https://user-images.githubusercontent.com/80883357/123402307-9095e580-d5e2-11eb-9c12-9a6ed4fd1f0d.png)
 
 ✨PortFolio Project✨<br><br>
-프로젝트명 : 웹 개발 커뮤니티사이트<br>
+프로젝트명 : 웹 개발 커뮤니티<br>
 참여인원 : 1명(나)<br>
 개발일정 : 2021.05.01 ~ 2021.05.31(1개월)<br>
 개발환경 : Java 1.8, apache-tomcat 8.5, mysql 8.0.24, Spring 5.0.7.RELEASE<br>
