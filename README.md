@@ -1,3 +1,11 @@
+✨PortFolio Project✨<br>
+<p>프로젝트명 : 웹 개발 커뮤니티</p><br>
+<p>참여인원 : 1명(나)</p><br>
+<p>개발일정 : 2021.05.01 ~ 2021.05.31(1개월)</p><br>
+<p>사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework</p><br>
+<p>주요기술 : 회원가입, 로그인, 게시판(CRUD구현, 페이징, 검색, 추천), 댓글(CRUD구현) 메인페이지 인기 게시글 등록</p><br>
+![portfolio](https://user-images.githubusercontent.com/80883357/123399368-7eff0e80-d5df-11eb-90d3-fd903edf1a31.png)
+
 <h1>Guy 😄</h1>
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://hits.seeyoufarm.com)                 
@@ -79,13 +87,3 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
-<h3>PortFolio Project</h3><br>
-<p>프로젝트명 : 웹 개발 커뮤니티</p><br>
-<p>참여인원 : 1명(나)</p><br>
-<p>개발일정 : 2021.05.01 ~ 2021.05.31(1개월)</p><br>
-<p>사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework</p><br>
-<p>주요기술 : 회원가입, 로그인, 게시판(CRUD구현, 페이징, 검색, 추천), 댓글(CRUD구현) 메인페이지 인기 게시글 등록</p><br>
-
-
-![portfolio](https://user-images.githubusercontent.com/80883357/123399368-7eff0e80-d5df-11eb-90d3-fd903edf1a31.png)
