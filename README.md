@@ -1,7 +1,7 @@
 ![portfolio](https://user-images.githubusercontent.com/80883357/123402307-9095e580-d5e2-11eb-9c12-9a6ed4fd1f0d.png)
 
 ✨PortFolio Project✨<br>
-프로젝트명 : 웹 개발 커뮤니티<br>
+프로젝트명 : 웹 개발 커뮤니티사이트<br>
 참여인원 : 1명(나)<br>
 개발일정 : 2021.05.01 ~ 2021.05.31(1개월)<br>
 사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework<br>
