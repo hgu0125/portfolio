@@ -63,7 +63,7 @@
   </li>
   <li>
     💬 I regulary write articles on :<br>
-    https://hgu0125.tistory.com
+    https://coduck.tistory.com/
   </li>
 </ul>
 <!--
