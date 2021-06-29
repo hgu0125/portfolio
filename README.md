@@ -8,7 +8,7 @@
 사용기술 : HTML5, CSS3, JavaScript, Jquery, JAVA, JSP, MySQL, Springframework<br>
 주요기술 : 회원가입, 로그인, 게시판(CRUD구현, 페이징, 검색, 추천), 댓글(CRUD구현) 메인페이지 인기 게시글 등록<br>
 
-<h1>Guy 😄</h1>
+<h1>홍코딩 😄</h1>
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter)](https://hits.seeyoufarm.com)                 
 
