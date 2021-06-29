@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.hgu.mapper.QuestionMapper"> <!-- 매퍼인터페이스 - 매퍼.xml 연결 -->
+	
+	<!-- 글 목록 -->
+	<select id="getList" resultType="org.hgu.domain.QuestionVO"> <!-- id : 인터페이스 메소드명 -->
+		<!-- CDATA : '<', '>'를 태그 기호가 아닌 부등호로 인식하게 해줌 -->
+	<![CDATA[select * from question where bno > 0
+	]]>
+	</select>
+	
+	<!-- 글 상세내용 -->
+	<select id="read" resultType="org.hgu.domain.QuestionVO"> <!-- resultType : 결과 저장할 데이터 타입 (호출한곳으로 보냄) -->
+		select * from question where bno = #{bno}
+	</select>
+
+	<sql id="criteria">
+		<trim prefix="AND (" suffix=")" prefixOverrides="OR">
+			<foreach item='type' collection="typeArr">
+				<trim prefix="OR">
+					<choose>
+						<when test="type == 'T'.toString()">
+							title like concat('%',#{keyword},'%')
+						</when>
+						<when test="type == 'C'.toString()">
+							content like concat('%',#{keyword},'%')
+						</when>
+						<when test="type == 'W'.toString()">
+							writer like concat('%',#{keyword},'%')
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+	</sql>
+
+	<!-- 페이징 -->
+	<select id="getListWithPaging"
+		resultType="org.hgu.domain.QuestionVO">
+	<![CDATA[
+ 		select bno, title, content, writer, regdate, updateDate, replyCnt
+ 			from(select @rownum:=@rownum+1 as rn, bno, title, content, writer, regdate, updateDate, replyCnt
+ 				from (select @rownum:=0) as tmp, question
+ 			where 1=1
+ 	]]>
+		<trim prefix=" and (" suffix=")" prefixOverrides="or">
+			<foreach item="type" collection="typeArr"> <!-- item=배열값[i], collection:배열 이름 -->
+				<trim prefix="or">
+					<choose>
+						<when test="type == 'T'.toString()">
+							title like concat('%',#{keyword},'%')
+						</when>
+						<when test="type == 'C'.toString()">
+							content like concat('%',#{keyword},'%')
+						</when>
+						<when test="type == 'W'.toString()">
+							writer like concat('%',#{keyword},'%')
+						</when>
+					</choose>
+				</trim>
+			</foreach>
+		</trim>
+			
+	<![CDATA[
+			order by bno desc
+			)questionList		
+ 		where rn > (#{pageNum} -1) * #{amount} and rn <= #{pageNum} * #{amount}
+ 	]]>
+	</select>
+
+	<!-- 총 게시글 수 -->
+	<select id="getTotalCount" resultType="int">
+		select count(*) from question
+		where 1=1
+		<include refid="criteria"></include>
+	<![CDATA[
+	and bno>0
+	]]>
+	</select>
+
+	<!-- 글 작성 -->
+	<insert id="insert">
+		insert into question(title, content, writer)
+		values (#{title}, #{content}, #{writer})
+	</insert>
+
+	<insert id="insertSelectKey">
+		<!-- order="before" : insert 하기 전에 <selectkey> 실행 -->
+		<selectKey keyProperty="bno" order="BEFORE"
+			resultType="long">
+			select max(bno)+1 from question
+		</selectKey>
+		insert into question(bno,title,content,writer)
+		values (#{bno},#{title},#{content},#{writer}) <!-- 위에서 얻은 bno가 사용됨 -->
+	</insert>
+
+	<!-- 글 수정 -->
+	<update id="update">
+		update question
+		set title = #{title},
+		content = #{content},
+		updateDate = curdate() <!-- 현재시간 -->
+		where bno = #{bno}
+	</update>
+
+	<!-- 글 삭제 -->
+	<delete id="delete">
+		delete from question where bno = #{bno}
+	</delete>
+
+	<!-- 게시글 조회수 -->
+	<update id="hit">
+		update question
+		set hit = hit+1
+		where bno = #{bno}
+	</update>
+	
+	<!-- 추천 -->
+	<update id="recommend">
+		update question
+		set recommend = recommend+1
+		where bno = #{bno}
+	</update>
+
+	<!-- 댓글 수 -->
+	<update id="updateReplyCnt">
+		update question set replyCnt = replyCnt + #{amount} where bno = #{bno}
+	</update>
+
+</mapper>

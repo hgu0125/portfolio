@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.hgu.mapper.HomeMapper">
+
+	<!-- 커뮤니티 추천글 -->
+	<select id="getListWithPaging1" resultType="org.hgu.domain.BoardVO">
+		<![CDATA[
+			select * from(
+			select @rownum:=@rownum+1 as rn, bno, title, content, writer, regdate, updateDate, replycnt, recommend, hit
+			from(select @rownum:=0) as tmp, board
+            where 1=1
+            order by recommend desc
+			)boardList
+            limit 5;
+		]]>
+	</select>	
+	
+	<!-- Q&A 추천글 -->
+	<select id="getListWithPaging2" resultType="org.hgu.domain.QuestionVO">
+		<![CDATA[
+			select * from(
+			select @rownum:=@rownum+1 as rn, bno, title, content, writer, regdate, updateDate, replycnt, recommend, hit
+			from(select @rownum:=0) as tmp, question
+            where 1=1
+            order by recommend desc
+			)questionList
+            limit 5;
+		]]>
+	</select>
+
+</mapper>
