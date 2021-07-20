@@ -48,7 +48,7 @@
 <h3>What I Like</h3>
 <ul>
   <li>
-    📺 Drama
+    📺 Netflix
   </li>
   <li>
     🔵 Game (BlackDesert)
