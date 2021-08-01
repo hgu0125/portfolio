@@ -51,9 +51,6 @@
     📺 Netflix
   </li>
   <li>
-    🔵 Game (BlackDesert)
-  </li>
-  <li>
     🍕 Pizza
   </li>
 </ul>
