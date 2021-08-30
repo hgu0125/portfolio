@@ -51,7 +51,10 @@
     📺 Netflix
   </li>
   <li>
-    🍕 Pizza
+    🍕 Cooking
+  </li>
+  <li>
+    😄 health
   </li>
 </ul>
 
